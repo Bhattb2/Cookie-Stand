@@ -276,6 +276,15 @@ function getRandom(min, max) {
     return Math.floor(Math.random() * ( max -min +1)) +min;
 }
 
+
+var table = document.getElementById('table-container');
+var tbodyEl = document.createElement('tbody');
+var thEl = document.createElement('th');
+var tdEl = document.createElement('td');
+var trEl = document.createElement('tr');
+
+
+
 // seattle.render = function () {
 //     randomNumber: function (min, max) {
 //         return Math.floor(Math.random() * (max - min)) + min;
