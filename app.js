@@ -278,10 +278,61 @@ function getRandom(min, max) {
 
 
 var table = document.getElementById('table-container');
+
+
 var tbodyEl = document.createElement('tbody');
-var thEl = document.createElement('th');
-var tdEl = document.createElement('td');
+
 var trEl = document.createElement('tr');
+var thEl = document.createElement('th');
+thEl.textContent = 'Column 1';
+trEl.appendChild(thEl);
+
+thEl = document.createElement('th');
+thEl.textContent = 'Column 2';
+trEl.appendChild(thEl);
+
+thEl = document.createElement('th');
+thEl.textContent = 'Column 3';
+trEl.appendChild(thEl);
+
+thEl = document.createElement('th');
+thEl.textContent = 'Column 4';
+trEl.appendChild(thEl);
+
+tbodyEl.appendChild(trEl);
+trEl = document.createElement('tr');
+thEl = document.createElement('th');
+thEl.textContent = 'Data tow 1';
+trEl.appendChild(thEl);
+
+tdEl = document.createElement('td');
+tdEl.textContent('one');
+trEl.appendChild(tdEl);
+
+tdEl = document.createElement('td');
+tdEl.textContent('two');
+trEl.appendChild(tdEl);
+
+tdEl = document.createElement('td');
+tdEl.textContent('three');
+trEl.appendChild(tdEl);
+
+tdEl = document.createElement('td');
+tdEl.textContent('four');
+trEl.appendChild(tdEl);
+
+
+
+
+
+
+
+table.appendChild(tbodyEl);
+
+
+
+
+
 
 
 
