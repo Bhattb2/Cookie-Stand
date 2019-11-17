@@ -15,7 +15,7 @@ var hoursArray = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2p
 // container for my lists
 var storeSales = document.getElementById('stores');
 
-
+// constructor function
 function Store(minCust, maxCust, avgCookies, locName) {
     this.minCust = minCust;
     this.maxCust = maxCust;
@@ -254,7 +254,7 @@ var lima = {
             var cookies = Math.round(this.customersEachHourArray[i] * this.averageCookiesPerCustomer);
             this.totalCookiesForTheDay += cookies;
             this.cookiesSoldEachHour.push(cookies);
-            console.log(this.cookiesSoldEachHour)
+            // console.log(this.cookiesSoldEachHour)
         }
     },
 
@@ -278,6 +278,29 @@ var lima = {
         storeSales.appendChild(ulEl);
     }
 };
+
+// need to update var names
+var renderFooterRow = function() {
+    var trEl = document.createElement('tr');
+    var tdEl = document.createElement('td');
+    var thEl = document.createElement('th');
+    thEl.textContent = 'Total';
+    trEl.appendChild(thEl);
+    for(var i = 0; i <CookieShop.hours.length; i ++) {
+      var storeHourlyTotals = 0;
+      tdEl = document.createElement('td');
+      for( var j = 0; j < CookieShop.allStores.length; j ++) {
+        // console.log(CookieShop.cookieEachHour[i])
+        storeHourlyTotals += CookieShop.allStores[j].cookieEachHour[i];
+      }
+      tdEl.textContent = storeHourlyTotals;
+      trEl.appendChild(tdEl);
+    }
+    var tdElem = document.createElement('td');
+    tdElem.textContent = CookieShop.allStoresTotal;
+    trEl.appendChild(tdElem);
+    CookieShop.tableDataEl.appendChild(trEl);
+   };
 
 
 seattle.render();
@@ -319,7 +342,7 @@ thEl = document.createElement('th');
 thEl.textContent = 'Data tow 1';
 trEl.appendChild(thEl);
 
-tdEl = document.createElement('td');
+var tdEl = document.createElement('td');
 tdEl.textContent = 'one';
 trEl.appendChild(tdEl);
 
@@ -362,7 +385,7 @@ trEl.appendChild(tdEl);
 
 
 
-table.appendChild(tbodyEl);
+storeSales.appendChild(tbodyEl);
 
 
 
