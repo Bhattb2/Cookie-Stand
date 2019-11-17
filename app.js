@@ -16,6 +16,20 @@ var hoursArray = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2p
 var storeSales = document.getElementById('stores');
 
 
+function Store(minCust, maxCust, avgCookies, locName) {
+    this.minCust = minCust;
+    this.maxCust = maxCust;
+    this.avgCookies = avgCookies;
+    this.locName = locName;
+    this.customersEachHourArray = [];
+    this.cookiesSoldEachHour = [];
+    this.totalCookiesForTheDay = 0;
+    
+    allStores.push(this);
+    this.generateHourlyCookies();
+  }
+
+
 var seattle = {
     storeName: 'Seattle HQ',
     minCustomerEachHour: 23,
@@ -275,6 +289,87 @@ lima.render();
 function getRandom(min, max) {
     return Math.floor(Math.random() * ( max -min +1)) +min;
 }
+
+
+var table = document.getElementById('table-container');
+
+
+var tbodyEl = document.createElement('tbody');
+
+var trEl = document.createElement('tr');
+var thEl = document.createElement('th');
+thEl.textContent = 'Column 1';
+trEl.appendChild(thEl);
+
+thEl = document.createElement('th');
+thEl.textContent = 'Column 2';
+trEl.appendChild(thEl);
+
+thEl = document.createElement('th');
+thEl.textContent = 'Column 3';
+trEl.appendChild(thEl);
+
+thEl = document.createElement('th');
+thEl.textContent = 'Column 4';
+trEl.appendChild(thEl);
+
+tbodyEl.appendChild(trEl);
+trEl = document.createElement('tr');
+thEl = document.createElement('th');
+thEl.textContent = 'Data tow 1';
+trEl.appendChild(thEl);
+
+tdEl = document.createElement('td');
+tdEl.textContent = 'one';
+trEl.appendChild(tdEl);
+
+tdEl = document.createElement('td');
+tdEl.textContent = 'two';
+trEl.appendChild(tdEl);
+
+tdEl = document.createElement('td');
+tdEl.textContent = 'three';
+trEl.appendChild(tdEl);
+
+
+
+tbodyEl.appendChild(trEl);
+
+trEl = document.createElement('tr');
+thEl = document.createElement('th');
+thEl.textContent= 'Data Row 2';
+trEl.appendChild(thEl);
+
+
+
+tdEl = document.createElement('td');
+tdEl.textContent = 'one';
+trEl.appendChild(tdEl);
+
+tdEl = document.createElement('td');
+tdEl.textContent = 'two';
+trEl.appendChild(tdEl);
+
+tdEl = document.createElement('td');
+tdEl.textContent = 'three';
+trEl.appendChild(tdEl);
+
+
+
+
+
+
+
+
+
+table.appendChild(tbodyEl);
+
+
+
+
+
+
+
 
 // seattle.render = function () {
 //     randomNumber: function (min, max) {
