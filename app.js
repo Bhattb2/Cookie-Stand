@@ -16,6 +16,20 @@ var hoursArray = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2p
 var storeSales = document.getElementById('stores');
 
 
+function Store(minCust, maxCust, avgCookies, locName) {
+    this.minCust = minCust;
+    this.maxCust = maxCust;
+    this.avgCookies = avgCookies;
+    this.locName = locName;
+    this.customersEachHourArray = [];
+    this.cookiesSoldEachHour = [];
+    this.totalCookiesForTheDay = 0;
+    
+    allStores.push(this);
+    this.generateHourlyCookies();
+  }
+
+
 var seattle = {
     storeName: 'Seattle HQ',
     minCustomerEachHour: 23,
@@ -306,20 +320,41 @@ thEl.textContent = 'Data tow 1';
 trEl.appendChild(thEl);
 
 tdEl = document.createElement('td');
-tdEl.textContent('one');
+tdEl.textContent = 'one';
 trEl.appendChild(tdEl);
 
 tdEl = document.createElement('td');
-tdEl.textContent('two');
+tdEl.textContent = 'two';
 trEl.appendChild(tdEl);
 
 tdEl = document.createElement('td');
-tdEl.textContent('three');
+tdEl.textContent = 'three';
+trEl.appendChild(tdEl);
+
+
+
+tbodyEl.appendChild(trEl);
+
+trEl = document.createElement('tr');
+thEl = document.createElement('th');
+thEl.textContent= 'Data Row 2';
+trEl.appendChild(thEl);
+
+
+
+tdEl = document.createElement('td');
+tdEl.textContent = 'one';
 trEl.appendChild(tdEl);
 
 tdEl = document.createElement('td');
-tdEl.textContent('four');
+tdEl.textContent = 'two';
 trEl.appendChild(tdEl);
+
+tdEl = document.createElement('td');
+tdEl.textContent = 'three';
+trEl.appendChild(tdEl);
+
+
 
 
 
