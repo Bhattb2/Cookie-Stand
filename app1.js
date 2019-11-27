@@ -122,4 +122,19 @@ function footer() {
     
 }
 
+var elForm = document.getElementById('form-fill-table');
+
+elForm.addEventListener('submit', function (event) {
+  event.preventDefault(); // prevent reload of page
+
+  var newCity = new City(event.target.city.value, parseInt(event.target.mincustomers.value), parseInt(event.target.maxcustomers.value), parseInt(event.target.avgcookies.value), 14, [], getCustomersPerHour, getCookiesSoldPerHour);
+
+  newCity.cookiesPerHour();
+
+  cities.push(newCity);
+
+  renderTable();
+});
+
+
 footer()

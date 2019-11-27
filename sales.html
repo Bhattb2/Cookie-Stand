@@ -3,18 +3,38 @@
 <head>
     
     <title>Salmon Cookies</title>
+    <title>Pat's Salmon Cookies</title>
+    <link href="css/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:400,600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Pat's Salmon Cookies - Sales Chart</h1>
-    <a href="../index.html">Salmon Cookies</a>
-
+  <header id="backgroundblack1">
+  <a id="homelink" href="index.html">Home</a>
+  <h1>Pat's Salmon Cookies - Sales Chart</h1>
+  </header>
+  <main>
     <table id='cookieTable'>
-
     </table>
-
-
-    <script src = "app1.js"></script>
-
+  </main>
+  <footer id="backgroundblack">
+    <fieldset id="fieldset">
+      <!-- <form id="user-form"> -->
+            <!-- css id -->
+            <legend>Submit average sales for a new location:</legend>
+            <form id="form-fill-table">
+              <!-- css id -->
+              <label>City:<input type="text" name="city" maxlength="35" /></label><br />
+              <label>Minimum customers:<input type="text" name="mincustomers" maxlength="3" /></label><br />
+              <label>Maximum customers:<input type="text" name="maxcustomers" maxlength="3" /></label><br />
+              <label>Average cookies per sale:<input type="text" name="avgcookies" maxlength="3" /></label><br />
+              <input id="add" type="submit" value="Add" />
+            </form>
+          </fieldset>
+  </footer>
     
+    <!-- </form> -->
+    <script src = "app1.js"></script>
 </body>
+
 </html>
