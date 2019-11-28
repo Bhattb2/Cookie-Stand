@@ -44,7 +44,7 @@ CookieShop.prototype.generateCookie= function() {
         this.cookieHour.push(cookie);
         // console.log (this.cookieHour);
         this.totalCookies += this.cookieHour[i];
-        console.log (this.totalCookies);
+        // console.log (this.totalCookies);
         allTotals += cookie;
         // console.log (allTotals);
     }
@@ -64,6 +64,7 @@ function header() {
     var thEl = document.createElement('th');
     thEl.textContent = 'Location';
     trEl.appendChild(thEl);
+
     for ( var i = 0; i <hours.length; i ++) {
         var thEl = document.createElement('th');
             thEl.textContent = hours[i];
@@ -93,11 +94,11 @@ CookieShop.prototype.generateShopRow = function() {
         trEl.appendChild(tdElem);
         tableEl.appendChild(trEl);
         
-
 }
-    for ( var i =0; i <shops.length; i ++) {
-        shops[i].generateShopRow()
-    }
+for ( var i =0; i <shops.length; i ++) {
+    shops[i].generateShopRow()
+}
+
 function footer() {
     var trEl = document.createElement('tr');
     var thEl = document.createElement('th');
@@ -117,8 +118,22 @@ function footer() {
     tdEl.textContent = allTotals;
     trEl.appendChild(tdEl);
     tableEl.appendChild(trEl);
-
+    
 }
 
-footer()
+var elForm = document.getElementById('form-fill-table');
 
+elForm.addEventListener('submit', function (event) {
+  event.preventDefault(); // prevent reload of page
+
+  var newCity = new City(event.target.city.value, parseInt(event.target.mincustomers.value), parseInt(event.target.maxcustomers.value), parseInt(event.target.avgcookies.value), 14, [], getCustomersPerHour, getCookiesSoldPerHour);
+
+  newCity.cookiesPerHour();
+
+  cities.push(newCity);
+
+  renderTable();
+});
+
+
+footer()
