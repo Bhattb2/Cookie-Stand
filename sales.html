@@ -27,20 +27,24 @@
     <table id='cookieTable'>
     </table>
   </main>
-  <footer id="backgroundblack">
+  <legend>Submit average sales for a new location:</legend>
+  <form id="form">
     <fieldset id="fieldset">
-      <!-- <form id="user-form"> -->
-            <!-- css id -->
-            <legend>Submit average sales for a new location:</legend>
-            <form id="form-fill-table">
-              <!-- css id -->
-              <label>City:<input type="text" name="city" maxlength="35" /></label><br />
-              <label>Minimum customers:<input type="text" name="mincustomers" maxlength="3" /></label><br />
-              <label>Maximum customers:<input type="text" name="maxcustomers" maxlength="3" /></label><br />
-              <label>Average cookies per sale:<input type="text" name="avgcookies" maxlength="3" /></label><br />
-              <input id="add" type="submit" value="Add" />
-            </form>
-          </fieldset>
+      <!-- css id -->
+      <label>City:</label>
+      <input type="text" name="city" />
+      <label>Minimum customers:</label>
+      <input type="number" name="mincustomers" />
+      <label>Maximum customers:</label>
+      <input type="number" name="maxcustomers" />
+      <label>Average cookies per sale:</label>
+      <input type="number" name="avgcookies"  />
+      <button>Add</button>
+    </fieldset>
+  </form>
+  <footer id="backgroundblack">
+    <!-- <form id="user-form"> -->
+      <!-- css id -->
   </footer>
     
     <!-- </form> -->
