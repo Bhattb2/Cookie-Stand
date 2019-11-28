@@ -76,7 +76,7 @@ function header() {
     tableEl.appendChild(trEl);
 }
 
-header()
+header();
 
 // shop locations 
 CookieShop.prototype.generateShopRow = function() {
@@ -96,9 +96,9 @@ CookieShop.prototype.generateShopRow = function() {
         tableEl.appendChild(trEl);
         
 }
-// for ( var i =0; i <shops.length; i ++) {
-//     shops[i].generateShopRow()
-// }
+for ( var i =0; i <shops.length; i ++) {
+    shops[i].generateShopRow()
+}
 
 function footer() {
     var trEl = document.createElement('tr');
@@ -130,10 +130,10 @@ elForm.addEventListener('submit', function (event) {
   var newCityName= event.target.city.value
   var newMinCust= event.target.mincustomers.value
   var newMaxCust= event.target.maxcustomers.value
-  var newAvgCookie= event.target.avgCookies.value
+  var newAvgCookie= event.target.avgcookies.value
   var newCity = new CookieShop(newCityName, newMinCust, newMaxCust, newAvgCookie);
 
-//   newCity.generateShopRow();
+  newCity.generateShopRow();
 });
 
 
