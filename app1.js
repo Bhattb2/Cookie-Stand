@@ -64,22 +64,21 @@ function header() {
     var thEl = document.createElement('th');
     thEl.textContent = 'Location';
     trEl.appendChild(thEl);
-    for ( var i = 0; i < hours.length; i ++) {
-        var thEl = document.createElement('th');
-        thEl.textContent = hours[i];
-        trEl.appendChild(thEl);
-    }   tableEl.appendChild(trEl);
 
-    thEl = document.createElement('th');
-    thEl.textContent = 'Daily Totals'
-    trEl.appendChild(thEl);
+    for ( var i = 0; i <hours.length; i ++) {
+        var thEl = document.createElement('th');
+            thEl.textContent = hours[i];
+            trEl.appendChild(thEl);
+    }       tableEl.appendChild(trEl);
+thEl = document.createElement('th');
+thEl.textContent = 'Daily Totals'
+trEl.appendChild(thEl);
 }
- 
-    
-header();
-    
-    // shop locations 
-    CookieShop.prototype.generateShopRow = function() {
+
+header()
+
+// shop locations 
+CookieShop.prototype.generateShopRow = function() {
         var trEl = document.createElement('tr');
         var thEl = document.createElement('th');
         thEl.textContent = this.storeName;
@@ -95,11 +94,11 @@ header();
         trEl.appendChild(tdElem);
         tableEl.appendChild(trEl);
         
-        
 }
 for ( var i =0; i <shops.length; i ++) {
     shops[i].generateShopRow()
 }
+
 function footer() {
     var trEl = document.createElement('tr');
     var thEl = document.createElement('th');
