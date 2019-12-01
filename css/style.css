@@ -1,5 +1,5 @@
 html > body {
-    background-color: rgb(209, 16, 16);
+    background-color: #922121;
   }
   
   #homelink {
@@ -8,14 +8,14 @@ html > body {
     border-radius: 20px;
     text-decoration: none;
     padding: 5px;
-    color: lightgray;
-    background-color: black;
+    color: #d9e0f1;
+    background-color: #922121;
     position: sticky;
     top: 5px;
   }
   
   :not(header){
-    color: lightgray;
+    color: #d9e0f1;
   }
   
   h1 {
@@ -23,13 +23,13 @@ html > body {
     font-size: 60pt;
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 1px;
-    background-color: #b52;
+    background-color: #ac2c2c;
     border-style: solid;
-    border-color: black;
+    border-color: #381f1f0a;
   }
   
   #backgroundblack1 {
-    background-color: #900;
+    background-color: #a81f1f9a;
   }
   
   #header1 {
@@ -38,7 +38,7 @@ html > body {
   }
   
   header, main, footer {
-    background-color: #600;
+    background-color: #bb6016bb;
     font-size: 14pt;
     padding: 15px; /* what??? */
     min-width: 1200px;
@@ -47,11 +47,11 @@ html > body {
   
   legend {
     font-family: 'Orbitron', sans-serif;
-    color: lightgray;
+    color: #d9e0f1;
     font-size: 20pt;
     font-style: italic;
     border-style: solid;
-    background-color: #222;
+    background-color: #6d242479;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 15px;
@@ -60,7 +60,7 @@ html > body {
   
   #fieldset {
     padding: 25px;
-    background-color: #b52;
+    background-color: #ac2c2c;
     width: 45%;
   }
   
@@ -77,7 +77,7 @@ html > body {
   }
   
   #add {
-    background-color: #222;
+    background-color: #6d242479;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 5px;
@@ -87,7 +87,7 @@ html > body {
   table {
     border-style: solid;
     border-width: 2px;
-    background-color: #b52;
+    background-color: #ac2c2c;
   }
   
   td, th {
@@ -96,8 +96,8 @@ html > body {
     margin: 5px;
     border-style: solid;
     border-color: #aaa;
-    background-color: lightgray;
-    color: black;
+    background-color: l#d9e0f1;
+    color: #381f1f0a;
     text-align: center;
   }
   

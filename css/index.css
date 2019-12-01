@@ -22,13 +22,13 @@ main > section :nth-child(3) {
 }
 
 header, main, footer {
-    background-color: rgb(8, 143, 69);
+    background-color: #bb6016bb;
     font-size: 14pt;
     min-width: 1200px;
 }
 
 html > body {
-    background-color: #696666;
+    background-color: #381f1f0a;
 }
 
 #logo {
@@ -40,29 +40,29 @@ html > body {
 
 header > article {
     display: inline-block;
-    color: lightgray;
+    color: #d9e0f1;
     margin-left: 6%;
 }
 
 header > article > a {
-    color: lightgray;
+    color: #d9e0f1;
     border-style: solid;
     border-radius: 20px;
     text-decoration: none;
     padding: 10px;
-    color: lightgray;
-    background-color: rgb(126, 22, 22);
+    color: #d9e0f1;
+    background-color: #381f1f0a;
 }
 
 header {
   position: sticky;
   top: -15px;
   z-index: 1;
-  background-color: rgb(46, 0, 153);
+  background-color: #d41212f8;
   margin-left: auto;
   margin-right: auto;
   border-bottom-style: solid;
-  border-bottom-color: rgb(145, 12, 12);
+  border-bottom-color: #381f1f0a;
 }
 
 #hero {
@@ -70,7 +70,8 @@ header {
     height: 450px;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(204, 34, 62);
+    background-color: #922121;
+    
 }
 
 
@@ -102,7 +103,7 @@ header {
     display: inline-block;
     width: 300px;
     height: 375px;
-    background-color: rgb(32, 13, 3);
+    background-color: #922121;
 }
 
 #section2 > article > img {
@@ -113,7 +114,7 @@ header {
 
 #section2 > article > p {
     text-align: center;
-    color: #600;
+    color: #2c221abb;
     font-size: 10pt;
     position: relative;
     top: 300px;
@@ -127,7 +128,7 @@ header {
     width: 960px;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(32, 13, 3);
+    background-color: #ac2c2c;
 }
 
 #section3 > article {
@@ -138,8 +139,8 @@ header {
     max-width: 400px;
     max-height: 360px;
     overflow: scroll;
-    background-color: lightgray;
-    color: #800;
+    background-color: #d9e0f1;
+    color: #b64e08e0;
     text-align: center;
     padding: 15px;
     line-height: 1.5em;
@@ -149,13 +150,13 @@ header {
 }
 
 #buy {
-  color: lightgray;
+  color: #d9e0f1;
   border-style: solid;
   border-radius: 20px;
   text-decoration: none;
   padding: 10px;
-  color: lightgray;
-  background-color: black;
+  color: #d9e0f1;
+  background-color: #381f1f0a;
   position: relative;
   font-style: italic;
   left: 69%;
@@ -166,25 +167,25 @@ header {
   width: 470px;
 }
 
-#featured {
+#featured img {
   width: 430px;
 }
 
 footer {
   border-top-style: solid;
   border-top-color: black;
-  background-color: #900;
+  background-color: #d41212f8;
 }
 
 footer > p {
   display: inline-block;
-  font-size: 9pt;
-  color: lightgray;
-  background-color: black;
+  font-size: 10pt;
+  color: #d1e1f5;
+  background-color: #381f1f0a;
   margin-left: 50px;
   border-radius: 15px;
   border-style: solid;
-  border-color: white;
+  border-color: #706767;
   padding: 7px;
   height: 10px;
   text-align: center;
